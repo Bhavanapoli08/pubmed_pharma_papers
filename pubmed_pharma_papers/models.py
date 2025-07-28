@@ -15,4 +15,4 @@ class Paper:
     authors: List[Author] = field(default_factory=list)
     non_academic_authors: List[Author] = field(default_factory=list)
     company_affiliations: List[str] = field(default_factory=list)
-    corresponding_author_email: Optional[str] = None  # ✅ add this line
+    corresponding_author_email: Optional[str] = None  
