@@ -79,4 +79,15 @@ To gain bonus points:
 Create a TestPyPI account: https://test.pypi.org/account/register/
 
 Build your package:
+poetry build
+
+Upload to TestPyPI:
+poetry config repositories.testpypi https://test.pypi.org/legacy/
+poetry publish -r testpypi
+
+Author
+Bhavana Poli
+📧 bhavanapoli61@gmail.com
+🔗 GitHub
+
 
