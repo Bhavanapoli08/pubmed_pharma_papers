@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pubmed-pharma-papers"
+version = "0.1.0"
+description = "Fetch PubMed papers with non-academic authors (pharma/biotech)"
+authors = ["Bhavana Poli <bhavanapoli61@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "pubmed_pharma_papers" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+requests = ">=2.32.4,<3.0.0"
+lxml = ">=6.0.0,<7.0.0"
+pandas = ">=2.3.1,<3.0.0"
+rich = ">=14.1.0,<15.0.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_pharma_papers.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

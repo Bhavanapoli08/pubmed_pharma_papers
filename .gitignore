@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv
+*.sqlite3
+
+# VSCode
+.vscode/
+
+# Poetry
+poetry.lock
+
+# OS
+.DS_Store
+
+# Results
+results.csv
+
+.venv/
+__pycache__/
+*.pyc
